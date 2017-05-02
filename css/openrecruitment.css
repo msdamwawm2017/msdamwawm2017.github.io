@@ -5,6 +5,16 @@
 .center{
 	text-align: center;
 }
+
+.top{
+	margin-top: 5rem;
+	height: 20rem;
+}
+
+.image-on-top{
+	height: 100%;
+}
+
 .main_h {
 	position: fixed;
 	max-height: 70px;
@@ -57,10 +67,7 @@ canvas{
 .input-field label{
 	color:#004dbb;
 }
-.title{
-	position: relative;
-	top: 25px;
-}
+
 
 .division-item {
     padding: 1px;
