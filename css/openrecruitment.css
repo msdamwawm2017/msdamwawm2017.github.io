@@ -8,16 +8,16 @@
 
 .top{
 	margin-top: 5rem;
-	height: 20rem;
 }
 
 .organogram{
-	height: 50rem;
+	height: 50em;
 }
 
 .image-on-top{
 	height: 100%;
 }
+
 
 .main_h {
 	position: fixed;
