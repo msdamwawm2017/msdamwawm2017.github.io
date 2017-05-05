@@ -10,8 +10,7 @@ $(function(){
     'Publikasi Luar Jaringan',
     'Kreasi Visual',
     'Kajian Strategis',
-    'Analisis Data dan Aspirasi',
-	  'Manajemen Sumber Daya Anggota'
+    'Analisis Data dan Aspirasi'
   ];
 	
   $(window).scroll(function() {
