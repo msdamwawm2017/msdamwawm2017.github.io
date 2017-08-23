@@ -14,14 +14,6 @@ $(function(){
 	'Manajemen Sumber Daya Anggota'
   ];
 	
-  $(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
-        $('.main_h').addClass('sticky');
-    } else {
-        $('.main_h').removeClass('sticky');
-    }
-  });
-
   var divisionItemTemplate=
     '<div class="col s12 division-item">'
     + '<div class="panel panel-default">'
@@ -175,10 +167,6 @@ $(function(){
       parent.find('ol').append('<li>Kesibukan Anda setahun mendatang</li>');
       valid = false;
     }
-    if($('#tentangmwawm').val()==""){
-      parent.find('ol').append('<li>Apa yang Anda ketahui tentang MWA WM</li>');
-      valid = false;
-    }
     if($('#tentangdiri').val()==""){
       parent.find('ol').append('<li>Tentang diri Anda</li>');
       valid = false;
@@ -228,14 +216,13 @@ $(function(){
 	  $('#emergency-review').html($('#noDarurat').val()+" ("+$('#pihakDarurat').val()+")");
 	  $('#alamat-review').html($("#alamat").val());
 	  $('#kendaraan-review').html($("#kendaraan").val());
-    $('#penyakit-review').html($("#penyakit").val());
+      $('#penyakit-review').html($("#penyakit").val());
 	  $('#keahlian-review').html($("#keahlian").val());
 	  $('#organisasi-review').html($("#organisasi").val());
 	  $('#kepanitiaan-review').html($("#kepanitiaan").val());
 	  $('#kesibukan-review').html($("#kesibukan").val());
 	  
 	  //MBTI
-	  $('#tentangmwawm-review').html($('#tentangmwawm').val());
 	  $('#tentangdiri-review').html($('#tentangdiri').val());
 	  //talentoday.com
 	  
@@ -252,7 +239,7 @@ $(function(){
         }
   }
 
-  var formKey = "e/1FAIpQLSeqprEkjYE1oS5Wpi_sNvtZOD_tc1J-yPEZRjp3w411le5r2Q";
+  var formKey = "e/1FAIpQLSdjXX0W4LPqHVDET4NQtG6VrrUmMTjYmvpuIUJ7eEq6ZBRwog";
 	
   var formEntries = {
 	  nama: "entry.1839260254",
@@ -292,9 +279,7 @@ $(function(){
 		"entry.768048502"
 	  ],
 	  
-	  tentangmwawm: "entry.1086493230",
-	  
-	  tentangdiri: "entry.1814451636",
+	  tentangdiri: "entry.141231101",
 		
   };
  // https://docs.google.com/forms/d/e/1FAIpQLSeqprEkjYE1oS5Wpi_sNvtZOD_tc1J-yPEZRjp3w411le5r2Q/viewform?usp=sf_link
@@ -330,8 +315,7 @@ $(function(){
       for (i = 1; i <= 3; ++i) {
             form.append('<input type="text" name="' + formEntries.alasan[i-1] + '" value="' + $('#reason' + i).val() + '">');
       }
-      form.append('<input type="text" name="' + formEntries.tentangmwawm + '" value="' + $('#tentangmwawm').val() + '">');
-
+      
       form.append('<input type="text" name="' + formEntries.tentangdiri + '" value="' + $('#tentangdiri').val() + '">');
 
       form.submit();    
