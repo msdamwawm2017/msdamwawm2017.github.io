@@ -239,7 +239,8 @@ $(function(){
         }
   }
 
-  var formKey = "e/1FAIpQLSdjXX0W4LPqHVDET4NQtG6VrrUmMTjYmvpuIUJ7eEq6ZBRwog";
+  var formKey = 'e/1FAIpQLSdjXX0W4LPqHVDET4NQtG6VrrUmMTjYmvpuIUJ7eEq6ZBRwog';
+	
 	
   var formEntries = {
 	  nama: "entry.1839260254",
@@ -285,7 +286,7 @@ $(function(){
  // https://docs.google.com/forms/d/e/1FAIpQLSeqprEkjYE1oS5Wpi_sNvtZOD_tc1J-yPEZRjp3w411le5r2Q/viewform?usp=sf_link
   //https://docs.google.com/forms/d/e/1FAIpQLScbzFTN7q93MLpTeN3aPizpSlvyvGCJjvnKMxcT_R9I7gaPxw/viewform?usp=sf_link
   $('#real-submit-button').click(function(){
-	  var url = "https://docs.google.com/forms/d/e/1FAIpQLSeqprEkjYE1oS5Wpi_sNvtZOD_tc1J-yPEZRjp3w411le5r2Q/formResponse";
+	  var url = "https://docs.google.com/forms/d/e/1FAIpQLSdjXX0W4LPqHVDET4NQtG6VrrUmMTjYmvpuIUJ7eEq6ZBRwog/formResponse";
     
     var form = $('#main-form');
     form.attr('action', url);
