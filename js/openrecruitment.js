@@ -5,6 +5,7 @@ $(function(){
     'Relasi Tahap Persiapan Bersama',
     'Relasi S1 ITB Ganesha',
     'Relasi Jatinangor',
+    'Relasi Cirebon',
     'Relasi Pascasarjana dan Humas',
     'Publikasi Dalam Jaringan',
     'Publikasi Luar Jaringan',
