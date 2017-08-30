@@ -9,9 +9,6 @@ $(function(){
     'Relasi Pascasarjana dan Humas',
     'Publikasi Dalam Jaringan',
     'Publikasi Luar Jaringan',
-    'Kreasi Visual',
-    'Kajian Strategis',
-    'Analisis Data dan Aspirasi',
 	'Manajemen Sumber Daya Anggota'
   ];
 	
